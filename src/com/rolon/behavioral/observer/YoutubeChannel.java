@@ -28,8 +28,9 @@ public class YoutubeChannel implements Observable{
 
     public void uploadNewVideo(String videoName){
         String message = new StringBuilder(videoName)
-                .append("was upload")
+                .append(" was upload")
                 .toString();
         System.out.println(message);
+        notifyObserver();
     }
 }
