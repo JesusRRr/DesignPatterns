@@ -6,10 +6,16 @@ public class Main {
         Purchase p1 = new Purchase("Boots");
         Purchase p2 = new Purchase("Pants");
 
-        FedexStrategy fs = new FedexStrategy();
-        DHLStrategy dhls = new DHLStrategy();
+        p1.setShipment(new FedexStrategy());
+        p1.setPayment(new CreditCardPayment());
+        p2.setShipment(new DHLStrategy());
+        p2.setPayment(new DebitCardPayment());
 
+        p1.getFinalPrice();
+        p2.getFinalPrice();
 
+        p1.pay();
+        p2.pay();
 
     }
 }

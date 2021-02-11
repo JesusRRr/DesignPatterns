@@ -21,7 +21,7 @@ public class Purchase {
         String message = new StringBuilder()
                 .append("The total cost is: ")
                 .append(product)
-                .append("cost")
+                .append(" cost")
                 .append("+")
                 .append( this.shipment.calculateTaxes())
                 .toString();
@@ -29,6 +29,6 @@ public class Purchase {
     }
 
     public void pay(){
-        payment.pay();
+        payment.pay(product);
     }
 }
