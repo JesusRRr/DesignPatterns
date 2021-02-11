@@ -1,6 +1,6 @@
 package com.rolon.behavioral.observer;
 
-public class ChannelSuscriber implements Observer{
+public class ChannelSubscriber implements Observer{
     @Override
     public void update() {
 
