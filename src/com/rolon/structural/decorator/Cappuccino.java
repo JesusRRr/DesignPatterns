@@ -1,9 +1,9 @@
 package com.rolon.structural.decorator;
 
-public class BlackCoffee implements Coffee{
+public class Cappuccino implements Coffee{
     @Override
     public String make() {
-        String message="Making a Black Coffee";
+        String message = "Making a Cappuccino";
         return message;
     }
 }
