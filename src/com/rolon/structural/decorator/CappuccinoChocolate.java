@@ -5,7 +5,7 @@ import java.io.PrintStream;
 public class CappuccinoChocolate extends CappuccinoDecorator{
     @Override
     public String decorate() {
-        return " and adding chocolate";
+        return " chocolate";
     }
 
     public CappuccinoChocolate(Cappuccino cappuccino){
